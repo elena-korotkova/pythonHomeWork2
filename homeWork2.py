@@ -5,16 +5,28 @@ def get_les1(a:str):
         res+=int(x) if x.isdigit() else 0
     print(res)
 
+#
+# def get_les2(a:str):
+#     """Напишите программу, которая принимает на вход число N и выдает набор произведений чисел от 1 до N."""
+#     if a.isdigit():
+#         res = 1
+#         for x in range(1, int(a) + 1):
+#             res *= x
+#         print(res)
+#     else:
+#         print('error')
+
 
 def get_les2(a:str):
     """Напишите программу, которая принимает на вход число N и выдает набор произведений чисел от 1 до N."""
     if a.isdigit():
-        res = 1
-        for x in range(1, int(a) + 1):
-            res *= x
+        res = [1]
+        for x in range(2, int(a) + 1):
+            res.append(res[-1] * x)
         print(res)
     else:
         print('error')
+
 
 
 def get_les3(a:str):
@@ -74,8 +86,8 @@ if __name__ == '__main__':
     a=input('input nums: ')
     while (a!='qqq'):
 
-        get_les1(a)
-        # get_les2(a)
+        # get_les1(a)
+        get_les2(a)
         # get_les3(a)
         # get_les4(a)
         # get_les5(a)
