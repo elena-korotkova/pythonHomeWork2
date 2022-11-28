@@ -75,10 +75,10 @@ if __name__ == '__main__':
     while (a!='qqq'):
 
         get_les1(a)
-        get_les2(a)
-        get_les3(a)
-        get_les4(a)
-        get_les5(a)
+        # get_les2(a)
+        # get_les3(a)
+        # get_les4(a)
+        # get_les5(a)
 
         a = input('input nums: ')
     else:
